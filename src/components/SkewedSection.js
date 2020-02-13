@@ -10,6 +10,12 @@ const SkewedSection = ({ gradientColor, angle, children, color }) => {
   );
 };
 
+SkewedSection.propTypes = {
+  gradientColor: PropTypes.string.isRequired,
+  angle: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired
+};
+
 const SkewedContainer = styled.section`
   display: flex;
   justify-content: center;
@@ -28,10 +34,5 @@ const SkewedContainer = styled.section`
   background-image: ${props =>
     props.gradientColor === "dark" ? "linear-gradient(180deg, #102E37 0%, #000000 100%)" : "linear-gradient(180deg, #0A3947 0%, #0097AC 100%)"};
 `;
-SkewedSection.propTypes = {
-  gradientColor: PropTypes.string.isRequired,
-  angle: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired
-};
 
 export default SkewedSection;

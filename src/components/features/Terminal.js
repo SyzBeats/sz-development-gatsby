@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
+import AppContext from "../../context/appContext";
 
 const Terminal = () => {
   const [command, setCommand] = useState("");
+  const appContext = useContext(AppContext);
+  const { chooseCommand } = appContext;
 
   const submitCommand = e => {
     e.preventDefault();
-    console.log(command);
+    chooseCommand(command);
   };
 
   return (
@@ -56,7 +59,7 @@ const TerminalWindow = styled.section`
   background: rgba(0, 0, 0, 0.78);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  height: 40rem;
+  min-height: 40rem;
   width: 80vw;
   max-width: 85rem;
   padding: 3.5rem;

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
@@ -10,6 +9,7 @@ import { RoundImage } from "../components/media/Image";
 import { HeadlineSecondary } from "../components/typography/Headlines";
 import { FlexRowHor, FlexRowVert } from "../components/layout/Flexrows";
 import Terminal from "../components/features/Terminal";
+
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro, main }) => (
   <div>
     <div className='full-width-image margin-top-0'>
@@ -87,7 +87,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
                 <Features gridItems={intro.blurbs} />
                 <div className='columns'>
                   <div className='column is-12 has-text-centered'>
-                    <Link className='btn' to='/products'>
+                    <Link className='button' to='/products'>
                       See all products
                     </Link>
                   </div>
@@ -96,7 +96,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
                   <h3 className='has-text-weight-semibold is-size-2'>Latest stories</h3>
                   <BlogRoll />
                   <div className='column is-12 has-text-centered'>
-                    <Link className='btn' to='/blog'>
+                    <Link className='button' to='/blog'>
                       Read more
                     </Link>
                   </div>

@@ -1,5 +1,14 @@
 //building styles here
 
+:root {
+  --color-primary: #056273;
+  --color-primary--dark: #0a3947;
+  --color-primary--light: #0097ac;
+
+  --color-dark: #102e37;
+  --color-black: #011114;
+  --box-shadow-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
 html {
   font-size: 62.5%;
 }
@@ -30,4 +39,71 @@ pre {
   background-color: initial;
   color: #f2f2f2;
   font-size: inherit;
+}
+
+/*Blog*/
+
+.blog-list {
+  &-item {
+  }
+}
+.blog-card {
+  padding: 0;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  &_headerimage {
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    width: 100%;
+    height: 20rem;
+    padding: 0;
+  }
+  &_body {
+    padding: 1.25rem 1.25rem 1rem 1.25rem;
+    background: #f8f8f8;
+  }
+  &_footer {
+    height: 5rem;
+    display: flex;
+  }
+  &_button {
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*COLORS*/
+
+.text {
+  &--white {
+    color: white !important;
+  }
+}
+
+/*Buttons*/
+
+.button {
+  min-width: 20rem;
+  padding: 2.5rem 3rem;
+  font-size: 1.5rem;
+  background: var(--color-primary--light);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow-1);
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  &:hover {
+    background: var(--color-primary--dark);
+    color: white;
+  }
 }
