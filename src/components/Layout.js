@@ -6,11 +6,12 @@ import "./all.sass";
 import "../styles.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import AppState from "../context/AppState";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <AppState>
       <Helmet>
         <html lang='en' />
         <title>{title}</title>
@@ -31,7 +32,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <Footer />
-    </div>
+    </AppState>
   );
 };
 

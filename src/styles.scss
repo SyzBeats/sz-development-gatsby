@@ -11,14 +11,23 @@ body {
 }
 .menu {
   font-size: 1.6rem;
-  & .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 3rem;
-    width: 3rem;
+}
+.navbar-menu .icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  & img {
+    max-height: 2.7rem;
   }
 }
 .navbar {
   min-height: 5.5rem;
+}
+
+pre {
+  background-color: initial;
+  color: #f2f2f2;
+  font-size: inherit;
 }

@@ -9,7 +9,7 @@ import SkewedSection from "../components/SkewedSection";
 import { RoundImage } from "../components/media/Image";
 import { HeadlineSecondary } from "../components/typography/Headlines";
 import { FlexRowHor, FlexRowVert } from "../components/layout/Flexrows";
-
+import Terminal from "../components/features/Terminal";
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro, main }) => (
   <div>
     <div className='full-width-image margin-top-0'>
@@ -48,6 +48,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         </h2>
       </div>
     </div>
+    <Terminal />
     <SkewedSection gradientColor='light' angle={15} color='white'>
       <FlexRowHor>
         <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />
