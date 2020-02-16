@@ -5,7 +5,7 @@ import AppContext from "../../context/appContext";
 const Terminal = () => {
   const [command, setCommand] = useState("");
   const appContext = useContext(AppContext);
-  const { chooseCommand } = appContext;
+  const { chooseCommand } = appContext || {};
 
   const submitCommand = e => {
     e.preventDefault();

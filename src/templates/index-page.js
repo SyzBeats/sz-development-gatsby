@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
     <Terminal />
     <SkewedSection gradientColor='light' angle={15} color='white'>
       <FlexRowHor>
-        <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />
+        {!!main.image4 && !!main.image4.image.childImageSharp && <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />}
         <FlexRowVert style={{ width: "40vw", margin: "2rem" }}>
           <HeadlineSecondary>Willkommen bei SZ Development</HeadlineSecondary>
           <p>
@@ -117,8 +117,12 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
+
   intro: PropTypes.shape({
     blurbs: PropTypes.array
+  }),
+  main: PropTypes.shape({
+    image4: PropTypes.object
   })
 };
 

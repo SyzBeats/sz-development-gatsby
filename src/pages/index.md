@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Willkommen bei SZ Development
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Webentwickler & Webdesigner in Freiburg und Umgebung
+subheading: Webentwickler & Webdesigner in Freiburg und Umgebung
 mainpitch:
   title: Why Kaldi
   description: >
