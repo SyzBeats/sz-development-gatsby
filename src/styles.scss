@@ -56,7 +56,7 @@ pre {
     border-top-right-radius: 0.25rem;
     border-top-left-radius: 0.25rem;
     width: 100%;
-    height: 20rem;
+    height: auto;
     padding: 0;
   }
   &_body {
@@ -85,6 +85,13 @@ pre {
   &--white {
     color: white !important;
   }
+  &--dark {
+    color: #222 !important;
+  }
+  &--subimage {
+    margin-top: -15%;
+    text-align: center;
+  }
 }
 
 /*Buttons*/
@@ -105,5 +112,15 @@ pre {
   &:hover {
     background: var(--color-primary--dark);
     color: white;
+  }
+}
+
+.buttons--row {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+
+  & .button:not(:first-child) {
+    margin: 0 1rem;
   }
 }

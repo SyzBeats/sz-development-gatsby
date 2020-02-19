@@ -9,4 +9,6 @@ export const HeadlineSecondary = styled.h2`
   text-align: left;
   width: 100%;
   margin: 2rem 0;
+  text-align: ${props => props.textAlign};
+  color: ${props => props.textColor};
 `;

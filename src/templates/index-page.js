@@ -12,7 +12,11 @@ import Terminal from "../components/features/Terminal";
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro, main }) => (
   <div>
-    <div className='full-width-image margin-top-0'>
+    <div
+      className='full-width-image margin-top-0'
+      style={{
+        backgroundImage: "url(https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+      }}>
       <div
         style={{
           display: "flex",
@@ -49,7 +53,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </div>
     </div>
     <Terminal />
-    <SkewedSection gradientColor='light' angle={15} color='white'>
+    <SkewedSection zIndex={10} flexDirection='row' gradientColor='light' angle={15} color='white'>
       <FlexRowHor>
         {!!main.image4 && !!main.image4.image.childImageSharp && <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />}
         <FlexRowVert style={{ width: "40vw", margin: "2rem" }}>
@@ -58,11 +62,52 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates, molestiae eius perspiciatis similique minus iste unde odit ex ipsa
             impedit deserunt quaerat. Porro vero est unde quasi magni quidem.
           </p>
+          <div className='buttons--row'>
+            <a href='#' className='button'>
+              Portfolio
+            </a>
+            <a href='#' className='button'>
+              Kontakt
+            </a>
+          </div>
         </FlexRowVert>
       </FlexRowHor>
     </SkewedSection>
-    <SkewedSection gradientColor='dark' angle={-15} color='#333'>
-      <p>test</p>
+    <SkewedSection zIndex={20} flexDirection='column' gradientColor='dark' angle={-15} color='#333'>
+      <HeadlineSecondary textColor='white' textAlign='center'>
+        Eine Auswahl meiner Projekte
+      </HeadlineSecondary>
+      <Features textColor='white' gridItems={intro.blurbs} />
+    </SkewedSection>
+    <div className='columns' style={{ zIndex: 20, position: "relative" }}>
+      <div className='column is-12 has-text-centered'>
+        <Link className='button' to='/products'>
+          Alle Projekte ansehen
+        </Link>
+      </div>
+    </div>
+    <SkewedSection zIndex={10} flexDirection='column' gradientColor='light' angle={15} color='white'>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div className='column is-12'>
+                    <h3 className='has-text-weight-semibold is-size-2'>Letzte Blogbeiträge</h3>
+                    <BlogRoll />
+                    <div className='column is-12 has-text-centered'>
+                      <Link className='button' to='/blog'>
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </SkewedSection>
     <section className='section section--gradient'>
       <div className='container'>
@@ -84,16 +129,8 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
-                <div className='columns'>
-                  <div className='column is-12 has-text-centered'>
-                    <Link className='button' to='/products'>
-                      See all products
-                    </Link>
-                  </div>
-                </div>
                 <div className='column is-12'>
-                  <h3 className='has-text-weight-semibold is-size-2'>Latest stories</h3>
+                  <h3 className='has-text-weight-semibold is-size-2'>Letzte Blogbeiträge</h3>
                   <BlogRoll />
                   <div className='column is-12 has-text-centered'>
                     <Link className='button' to='/blog'>
@@ -178,7 +215,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }

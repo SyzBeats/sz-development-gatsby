@@ -18,33 +18,18 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/mock-image_dell-xps15-agw.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+    - image: /img/mock-image_dell-xps15-omv.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+    - image: /img/mock-image_dell-xps15-intyme.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+    - image: /img/mock-image_dell-xps15-cloud-minded.png
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
