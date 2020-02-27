@@ -6,7 +6,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import SkewedSection from "../components/SkewedSection";
 import { RoundImage } from "../components/media/Image";
-import { HeadlineSecondary } from "../components/typography/Headlines";
+import { HeadlineSecondary, HeadlinePrimary, HeadlineTertiary } from "../components/typography/Headlines";
 import { FlexRowHor, FlexRowVert } from "../components/layout/Flexrows";
 import Terminal from "../components/features/Terminal";
 
@@ -15,38 +15,33 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
     <div
       className='full-width-image margin-top-0'
       style={{
+        minHeight: "45vh",
+        backgroundSize: "cover",
         backgroundImage: "url(https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
       }}>
       <div
         style={{
           display: "flex",
-          height: "150px",
+          minHeight: "150px",
           lineHeight: "1",
           justifyContent: "space-around",
           alignItems: "left",
           flexDirection: "column"
         }}>
-        <h1
-          className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
-          style={{
-            boxShadow: "rgb(0, 21, 29) 0.5rem 0px 0px, rgb(0, 19, 26) -0.5rem 0px 0px",
-            backgroundColor: "rgb(0, 21, 29)",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-            textAlign: "center"
-          }}>
+        <HeadlinePrimary textColor='#f8f8f8' textAlignment='center'>
           {title}
-        </h1>
+        </HeadlinePrimary>
         <h2
-          className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
+          className=' is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
           style={{
             boxShadow: "rgb(10, 61, 75) 0.5rem 0px 0px, rgb(10, 61, 75) -0.5rem 0px 0px",
             backgroundColor: "rgb(10, 61, 75)",
             color: "white",
-            lineHeight: "1",
+            lineHeight: "2em",
             padding: "0.25em",
-            textAlign: "center"
+            textAlign: "center",
+            letterSpacing: ".1rem",
+            fontWeight: 200
           }}>
           {subheading}
         </h2>
@@ -55,9 +50,11 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
     <Terminal />
     <SkewedSection zIndex={10} flexDirection='row' gradientColor='light' angle={15} color='white'>
       <FlexRowHor>
-        {!!main.image4 && !!main.image4.image.childImageSharp && <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />}
+        <picture>
+          {!!main.image4 && !!main.image4.image.childImageSharp && <RoundImage src={main.image4.image.childImageSharp.fluid.src} alt='Simeon Zimmermann' />}
+        </picture>
         <FlexRowVert style={{ width: "40vw", margin: "2rem" }}>
-          <HeadlineSecondary>Willkommen bei SZ Development</HeadlineSecondary>
+          <HeadlineSecondary>Willkommen bei SZ&nbsp;Development</HeadlineSecondary>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates, molestiae eius perspiciatis similique minus iste unde odit ex ipsa
             impedit deserunt quaerat. Porro vero est unde quasi magni quidem.
@@ -74,9 +71,6 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </FlexRowHor>
     </SkewedSection>
     <SkewedSection zIndex={20} flexDirection='column' gradientColor='dark' angle={-15} color='#333'>
-      <HeadlineSecondary textColor='white' textAlign='center'>
-        Eine Auswahl meiner Projekte
-      </HeadlineSecondary>
       <Features textColor='white' gridItems={intro.blurbs} />
     </SkewedSection>
     <div className='columns' style={{ zIndex: 20, position: "relative" }}>
@@ -94,11 +88,13 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div className='column is-12'>
-                    <h3 className='has-text-weight-semibold is-size-2'>Letzte Blogbeiträge</h3>
+                    <HeadlineTertiary textColor='#f2f2f2' textAlign='center'>
+                      Letzte Blogbeiträge
+                    </HeadlineTertiary>
                     <BlogRoll />
                     <div className='column is-12 has-text-centered'>
                       <Link className='button' to='/blog'>
-                        Read more
+                        Hier Zum Blog
                       </Link>
                     </div>
                   </div>

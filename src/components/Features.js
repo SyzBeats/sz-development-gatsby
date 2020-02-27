@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { HeadlineSecondary } from "../components/typography/Headlines";
 const FeatureGrid = ({ gridItems, textColor }) => (
-  <div style={{ padding: "0 10vw" }} className='columns is-multiline'>
+  <div style={{ padding: "0 10vw 10vw 10vw" }} className='columns is-multiline'>
+    <HeadlineSecondary className='py-2' textColor='white' textAlign='center' style={{ transform: "translateY(5rem)" }}>
+      Eine Auswahl meiner Projekte
+    </HeadlineSecondary>
     {gridItems.map(item => (
       <div key={item.text} className='column is-6'>
         <section className='section'>

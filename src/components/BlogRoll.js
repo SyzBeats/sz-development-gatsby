@@ -19,20 +19,20 @@ class BlogRoll extends React.Component {
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`
+                        alt: `Featured Image fuer den Beitrag: ${post.frontmatter.title}`
                       }}
                     />
                   ) : null}
                 </header>
                 <div className='blog-card_body'>
-                  <p className='post-meta'>
-                    <Link className='title has-text-primary is-size-4' to={post.fields.slug}>
+                  <p className='post-meta blog-card_title has-text-centered'>
+                    <Link className='title is-size-4' to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <br />
-                    <span className='subtitle is-size-5 is-block'>vom {post.frontmatter.date}</span>
+                    <span className='subtitle is-size-5 is-block py-1'>vom {post.frontmatter.date}</span>
                   </p>
-                  <p>
+                  <p className='blog-card_excerpt'>
                     {post.excerpt}
                     <br />
                   </p>
