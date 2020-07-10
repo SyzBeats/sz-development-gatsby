@@ -10,16 +10,16 @@ intro:
   blurbs:
     - image: /img/mock-image_dell-xps15-agw.png
       text: >
-        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
-    - image: /img/mock-image_dell-xps15-omv.png
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki.
+    - image: /img/mock-image_dell-xps15-margo-muenchen.png
       text: >
-        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki.
     - image: /img/mock-image_dell-xps15-intyme.png
       text: >
-        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki.
     - image: /img/mock-image_dell-xps15-cloud-minded.png
       text: >
-        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki. Photo booth fanny pack mlkshk tumblr fashion axe narwhal, godard seitan. Tattooed thundercats iceland echo park sustainable cardigan readymade. Poke yuccie fixie thundercats fashion axe iPhone man braid asymmetrical post-ironic cred typewriter neutra
+        Lorem ipsum dolor amet yOLO organic copper mug shoreditch. Meh street art single-origin coffee etsy meditation hella taiyaki.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

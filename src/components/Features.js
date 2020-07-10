@@ -1,21 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import { HeadlineSecondary } from "../components/typography/Headlines";
-const FeatureGrid = ({ gridItems, textColor }) => (
+const FeatureGrid = ({ gridItems, textColor, colWidth }) => (
   <div style={{ padding: "0 10vw 10vw 10vw" }} className='columns is-multiline'>
-    <HeadlineSecondary className='py-2' textColor='white' textAlign='center' style={{ transform: "translateY(5rem)" }}>
-      Eine Auswahl meiner Projekte
-    </HeadlineSecondary>
     {gridItems.map(item => (
-      <div key={item.text} className='column is-6'>
+      <div key={item.text} className={`column is-${colWidth}`}>
         <section className='section'>
           <div className='has-text-centered'>
-            <div
-              style={{
-                width: "100%",
-                display: "inline-block"
-              }}>
+            <div>
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
@@ -33,7 +25,8 @@ FeatureGrid.propTypes = {
       text: PropTypes.string
     })
   ),
-  textColor: PropTypes.string
+  textColor: PropTypes.string,
+  colWidth: PropTypes.number
 };
 
 export default FeatureGrid;

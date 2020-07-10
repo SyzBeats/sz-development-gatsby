@@ -71,7 +71,10 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </FlexRowHor>
     </SkewedSection>
     <SkewedSection zIndex={20} flexDirection='column' gradientColor='dark' angle={-15} color='#333'>
-      <Features textColor='white' gridItems={intro.blurbs} />
+      <HeadlineSecondary className='py-2' textColor='white' textAlign='center' style={{ transform: "translateY(5rem) skewY(15deg)" }}>
+        Eine Auswahl meiner Projekte
+      </HeadlineSecondary>
+      <Features textColor='white' gridItems={intro.blurbs} colWidth={6} />
     </SkewedSection>
     <div className='columns' style={{ zIndex: 20, position: "relative" }}>
       <div className='column is-12 has-text-centered'>
